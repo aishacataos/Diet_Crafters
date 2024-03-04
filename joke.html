@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Meal Plans - DietCrafters</title>
+    <style>
+        :root {
+            --primary-color: #76b852; /* A fresh green */
+            --hover-primary: #8DC26F;
+            --text-color: #505050;
+            --light-text-color: #ffffff;
+            --background-color: #f0f0f0;
+            --container-bg-color: transparent;
+            --container-shadow: 0 2px 4px rgba(0,0,0,0.1);
+            --font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            --border-radius: 10px;
+            --transition-speed: 0.3s;
+        }
+
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: var(--font-family);
+            background: url('Images/mp.png') no-repeat center center fixed;
+            -webkit-background-size: cover;
+            -moz-background-size: cover;
+            -o-background-size: cover;
+            background-size: cover;
+            color: var(--text-color);
+        }
+
+        .header {
+            background: linear-gradient(90deg, var(--primary-color) 0%, var(--hover-primary) 100%);
+            color: var(--light-text-color);
+            padding: 10px 50px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            box-shadow: var(--container-shadow);
+        }
+        .header h1 {
+            margin: 0;
+            font-size: 2rem;
+        }
+        .header h1 {
+            font-size: 2rem;
+            margin-bottom: 0.5em; /* Spacing between title and nav */
+        }
+
+        .menu {
+            list-style: none;
+            display: flex;
+            gap: 10px;
+            padding: 0;
+            justify-content: center;
+            margin-bottom: 1em; /* Additional space for links */
+        }
+
+        .menu li a {
+            display: block;
+            padding: 10px 15px;
+            color: var(--light-text-color);
+            text-decoration: none;
+            background-color: rgba(255, 255, 255, 0.3);
+            border-radius: var(--border-radius);
+            transition: background-color var(--transition-speed);
+        }
+
+        .menu li a:hover, .menu li a:focus {
+            background-color: rgba(255, 255, 255, 0.5);
+        }
+
+        .login-section {
+            position: absolute;
+            top: 20px;
+            right: 50px;
+            display: flex;
+            align-items: center;
+        }
+
+        .login-section img {
+            cursor: pointer;
+            transition: transform 0.2s ease-in-out;
+            margin-left: 10px;
+        }
+
+        .login-section img:hover {
+            transform: scale(1.1);
+        }
+
+        .meal-plan-category {
+            display: flex;
+            justify-content: space-around;
+            flex-wrap: wrap;
+            gap: 20px;
+            padding: 20px;
+        }
+
+        .category-card {
+            background-color: var(--primary-color);
+            border-radius: var(--border-radius);
+            padding: 20px;
+            width: calc(25% - 40px);
+            color: var(--light-text-color);
+            text-align: center;
+            transition: transform 0.3s ease-in-out;
+            box-shadow: var(--container-shadow);
+            display: block; /* Ensure it behaves like a link */
+            text-decoration: none; /* Remove underline from links */
+        }
+
+        .category-card:hover {
+            transform: translateY(-5px);
+            background-color: var(--hover-primary);
+        }
+
+        @media (max-width: 768px) {
+            .menu {
+                flex-direction: column;
+            }
+
+            .category-card {
+                width: calc(50% - 40px);
+            }
+
+            .login-section {
+                position: static;
+                margin-top: 10px;
+            }
+        }
+    </style>
+</head>
+<body>
+<div class="header">
+    <h1>Meal Plans</h1>
+    <ul class="menu">
+        <li><a href="Home.html">Home</a></li>
+        <li><a href="#progress">Progress</a></li>
+        <li><a href="#learn">Learn More</a></li>
+    </ul>
+    <div class="login-section">
+        <img src="admin-login-icon.jpg" alt="Admin Login" onclick="location.href='/admin-login.html'">
+        <img src="login-signup-icon.jpg" alt="Login/Sign Up" onclick="location.href='/login-signup.html'">
+    </div>
+</div>
+
+<div class="meal-plan-category">
+    <a href="Underweight.html" class="category-card">
+        <h3>Underweight Meal Plan</h3>
+        <p>High-calorie nutritious foods to help you gain weight healthily.</p>
+    </a>
+    <a href="Healthy.html" class="category-card">
+        <h3>Healthy Weight Meal Plan</h3>
+        <p>Maintain your weight with a balanced diet of whole foods.</p>
+    </a>
+    <a href="Overweight.html" class="category-card">
+        <h3>Overweight Meal Plan</h3>
+        <p>A calorie-controlled diet to support weight loss.</p>
+    </a>
+    <a href="Obese.html" class="category-card">
+        <h3>Obese Meal Plan</h3>
+        <p>Structured meal plans for significant weight loss.</p>
+    </a>
+    <a href="Allergy.html" class="category-card">
+        <h3>Allergy Friendly Meal Plan</h3>
+        <p>Meal plan alternatives for allergy prone individuals.</p>
+    </a>
+</div>
+
+</body>
+</html>
+
+
+
+

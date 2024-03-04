@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta viewport="width=device-width, initial-scale=1.0">
+    <title>Admin Dashboard - DietCrafters</title>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600&display=swap" rel="stylesheet">
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: 'Open Sans', sans-serif;
+            background: url('/Images/drake.jpg') no-repeat center center fixed; /* Update this line */
+            background-size: cover;
+        }
+
+        .header {
+            background-color: #76b852;
+            color: white;
+            padding: 10px 50px;
+            text-align: center;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+
+        .header h1 {
+            margin: 0;
+            font-weight: 600;
+            font-size: 1.8rem;
+        }
+
+        .nav-links {
+            text-align: center;
+            background-color: #fff;
+            padding: 10px 0;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+        }
+
+        .nav-links a {
+            color: #76b852;
+            text-decoration: none;
+            margin: 0 15px;
+            font-weight: 400;
+            transition: all 0.3s ease;
+        }
+
+        .nav-links a:hover {
+            color: #8DC26F;
+            text-decoration: underline;
+        }
+
+        .container {
+            max-width: 960px;
+            margin: 20px auto;
+            background-color: #fff;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+        }
+
+        th, td {
+            padding: 12px 15px;
+            text-align: left;
+            border-bottom: 1px solid #ddd;
+        }
+
+        th {
+            background-color: #66a03a;
+            color: white;
+            font-weight: 600;
+        }
+
+        tr:nth-child(even) {
+            background-color: #f9f9f9;
+        }
+
+        tr:hover {
+            background-color: #e7f4e4;
+        }
+
+        .bmi-result {
+            font-weight: 600;
+        }
+
+        .healthy { color: #76b852; }
+        .overweight { color: #e2a03f; }
+        .obese { color: #e76f51; }
+        .underweight { color: #4d80e4; }
+
+        @media (max-width: 768px) {
+            .header {
+                padding: 10px 20px;
+            }
+
+            .nav-links a {
+                display: block;
+                margin: 10px 0;
+            }
+        }
+    </style>
+</head>
+<body>
+
+<div class="header">
+    <h1>Admin Dashboard</h1>
+</div>
+
+<div class="nav-links">
+    <a href="Home.html">Home</a>
+    <a href="MealPlans.html">Meal Plans</a>
+    <a href="#progress">Progress</a>
+    <a href="#learn">Learn More</a>
+</div>
+
+<div class="container">
+    <h2 style="color: #76b852; font-weight: 600;">Student Data & BMI Results</h2>
+    <table>
+        <thead>
+        <tr>
+            <th>Name</th>
+            <th>Grade</th>
+            <th>Section</th>
+            <th>BMI Result</th>
+        </tr>
+        </thead>
+        <tbody>
+        <tr>
+            <td>Vanra Yarn</td>
+            <td>6</td>
+            <td>Zircon</td>
+            <td class="bmi-result healthy">Healthy 19.0</td>
+        </tr>
+        <tr>
+            <td>Ash Curry</td>
+            <td>5</td>
+            <td>Opal</td>
+            <td class="bmi-result overweight">Overweight 25.2</td>
+        </tr>
+        <tr>
+            <td>Dickins Cider</td>
+            <td>6</td>
+            <td>Amber</td>
+            <td class="bmi-result obese">Obese 30.5</td>
+        </tr>
+        <tr>
+            <td>Ben Dover</td>
+            <td>5</td>
+            <td>Emerald</td>
+            <td class="bmi-result underweight">Underweight 16.4</td>
+        </tr>
+        </tbody>
+    </table>
+</div>
+
+</body>
+</html>
+
+
+
+
+

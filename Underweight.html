@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Underweight Meal Plan - DietCrafters</title>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --primary-color: #76b852;
+            --hover-primary: #8DC26F;
+            --text-color: #505050;
+            --light-text-color: #ffffff;
+            --background-color: #f0f0f0;
+            --container-bg-color: rgba(255, 255, 255, 0);
+            --container-shadow: 0 2px 4px rgba(0,0,0,0.1);
+            --font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            --border-radius: 10px;
+            --transition-speed: 0.3s;
+        }
+
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: var(--font-family);
+            background-color: var(--background-color);
+            color: var(--text-color);
+        }
+
+        .header {
+            background-color: var(--primary-color);
+            color: var(--light-text-color);
+            padding: 20px 50px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            box-shadow: var(--container-shadow);
+        }
+
+        .branding {
+            font-size: 2.5rem;
+            font-weight: bold;
+            margin-right: auto;
+        }
+
+        .menu {
+            list-style: none;
+            display: flex;
+            gap: 15px;
+            padding: 0;
+            margin-left: auto;
+        }
+
+        .menu li a {
+            color: var(--light-text-color);
+            text-decoration: none;
+            padding: 10px 15px;
+            transition: background-color var(--transition-speed);
+            border-radius: var(--border-radius);
+            background-color: rgba(255, 255, 255, 0.3);
+        }
+
+        .menu li a:hover {
+            background-color: rgba(255, 255, 255, 0.5);
+        }
+
+        .meal-section {
+            display: flex;
+            margin-top: 20px;
+            align-items: center;
+            justify-content: center;
+            padding: 0 50px;
+        }
+
+        .meal-description {
+            flex-basis: 50%;
+            background-color: var(--container-bg-color);
+            padding: 20px;
+            margin-left: 20px;
+            border-radius: var(--border-radius);
+            box-shadow: var(--container-shadow);
+            font-size: 1rem;
+        }
+
+        .meal-image {
+            flex-basis: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .meal-image img {
+            max-width: 100%;
+            height: auto;
+            border-radius: var(--border-radius);
+        }
+
+        @media (max-width: 768px) {
+            .meal-section {
+                flex-direction: column-reverse;
+            }
+
+            .meal-description, .meal-image {
+                flex-basis: auto;
+                max-width: 90%;
+                margin: 10px auto;
+            }
+
+            .header {
+                flex-direction: column;
+                text-align: center;
+            }
+
+            .branding, .menu {
+                margin-left: 0;
+                margin-right: 0;
+            }
+        }
+    </style>
+</head>
+<body>
+
+<div class="header">
+    <div class="branding">Underweight Meal Plan</div>
+    <nav>
+        <ul class="menu">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="MealPlans.html">Meal Plans</a></li>
+            <li><a href="#progress">Progress</a></li>
+            <li><a href="#learn">Learn More</a></li>
+        </ul>
+    </nav>
+</div>
+
+<div class="meal-section">
+    <div class="meal-image">
+        <img src="Images/ubf.png" alt="Healthy Breakfast" />
+    </div>
+    <div class="meal-description">
+        <h2>Breakfast</h2>
+        <p>Start your day with a nutritious breakfast that's high in calories and protein to help you gain weight healthily.
+            This meal includes, <b>(skinless lychees, longganisa, scrambled egg with tomato, onion, and spinach + boiled rice
+                and fresh milk).</b> It's packed with the right nutrients to fuel your body It's packed with the right nutrients
+            to help fuel your body the right way for your day.</p>
+    </div>
+</div>
+<div class="meal-section">
+    <div class="meal-image">
+        <img src="Images/uas.png" alt="Healthy Breakfast" />
+    </div>
+    <div class="meal-description">
+        <h2>AM Snack</h2>
+        <p>Recharge with a mid-morning snack designed to boost your energy levels. This snack is <b>"Buchi"</b>,
+            a popular snack in Filipino cuisine, known for its sweet and savory flavors.
+            It's a type of rice cake, made from glutinous rice flour, and traditionally filled with sweetened red bean paste,
+            though variations might include fillings like ube, custard,
+            or even chocolate for a variety of healthy fat and nutrients. </p>
+    </div>
+</div>
+<div class="meal-section">
+    <div class="meal-image">
+        <img src="Images/ulunch.png" alt="Healthy Breakfast" />
+    </div>
+    <div class="meal-description">
+        <h2>Lunch</h2>
+        <p>Enjoy a hearty lunch that combines complex carbohydrates,
+            lean proteins, and healthy fats to support your weight gain goals.
+            Today's meal features <b>chicken pochero with veggies, boiled rice, and kamachile</b>.</p>
+    </div>
+</div>
+<div class="meal-section">
+    <div class="meal-image">
+        <img src="Images/upms.png" alt="Healthy Breakfast" />
+    </div>
+<div class="meal-description">
+    <h2>PM Snack</h2>
+    <p> Don't be afraid to spoil yourself with some <b>Pancit Canton</b>.
+        A classic favorite that comes in an assortment of flavor and best taken in moderation
+        <i>(not daily)</i>. You can also mix this up with more nutritious food like
+        <b>boiled egg/s and vegetables (scallions, carrots, or lettuce)</b>!</p>
+</div>
+</div>
+<div class="meal-section">
+    <div class="meal-image">
+        <img src="Images/udinner.png" alt="Healthy Breakfast" />
+    </div>
+    <div class="meal-description">
+        <h2>Dinner</h2>
+        <p>End your day with a dinner that not only satisfies your appetite but also contributes
+            to your nutritional needs. Your dinner includes a generous serving of
+            <b>sinigang na talakitok with veggies, pork strip fritters, and mango-sago with gelatin </b>
+            ensuring a well-rounded intake of vitamins and minerals</p>
+    </div>
+</div>
+
+
+</body>
+</html>

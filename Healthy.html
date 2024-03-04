@@ -1,0 +1,207 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Healthy Meal Plan - DietCrafters</title>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --primary-color: #76b852;
+            --hover-primary: #8DC26F;
+            --text-color: #505050;
+            --light-text-color: #ffffff;
+            --background-color: #f0f0f0;
+            --container-bg-color: rgba(255, 255, 255, 0);
+            --container-shadow: 0 2px 4px rgba(0,0,0,0.1);
+            --font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            --border-radius: 10px;
+            --transition-speed: 0.3s;
+        }
+
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: var(--font-family);
+            background-color: var(--background-color);
+            color: var(--text-color);
+        }
+
+        .header {
+            background-color: var(--primary-color);
+            color: var(--light-text-color);
+            padding: 20px 50px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            box-shadow: var(--container-shadow);
+        }
+
+        .branding {
+            font-size: 2.5rem;
+            font-weight: bold;
+            margin-right: auto;
+        }
+
+        .menu {
+            list-style: none;
+            display: flex;
+            gap: 15px;
+            padding: 0;
+            margin-left: auto;
+        }
+
+        .menu li a {
+            color: var(--light-text-color);
+            text-decoration: none;
+            padding: 10px 15px;
+            transition: background-color var(--transition-speed);
+            border-radius: var(--border-radius);
+            background-color: rgba(255, 255, 255, 0.3);
+        }
+
+        .menu li a:hover {
+            background-color: rgba(255, 255, 255, 0.5);
+        }
+
+        .meal-section {
+            display: flex;
+            margin-top: 20px;
+            align-items: center;
+            justify-content: center;
+            padding: 0 50px;
+        }
+
+        .meal-description {
+            flex-basis: 50%;
+            background-color: var(--container-bg-color);
+            padding: 20px;
+            margin-left: 20px;
+            border-radius: var(--border-radius);
+            box-shadow: var(--container-shadow);
+            font-size: 1rem;
+        }
+
+        .meal-image {
+            flex-basis: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .meal-image img {
+            max-width: 100%;
+            height: auto;
+            border-radius: var(--border-radius);
+        }
+
+        @media (max-width: 768px) {
+            .meal-section {
+                flex-direction: column-reverse;
+            }
+
+            .meal-description, .meal-image {
+                flex-basis: auto;
+                max-width: 90%;
+                margin: 10px auto;
+            }
+
+            .header {
+                flex-direction: column;
+                text-align: center;
+            }
+
+            .branding, .menu {
+                margin-left: 0;
+                margin-right: 0;
+            }
+        }
+    </style>
+</head>
+<body>
+
+<div class="header">
+    <div class="branding">Healthy Meal Plan</div>
+    <nav>
+        <ul class="menu">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="MealPlans.html">Meal Plans</a></li>
+            <li><a href="#progress">Progress</a></li>
+            <li><a href="#learn">Learn More</a></li>
+        </ul>
+    </nav>
+</div>
+
+<div class="meal-section">
+    <div class="meal-image">
+        <img src="Images/hbf.png" alt="Healthy Breakfast" />
+    </div>
+    <div class="meal-description">
+        <h2>Breakfast</h2>
+        <p> Start your day with a burst of sweetness and essential nutrients.
+            Your breakfast includes <b>ripe mango</b>, rich in vitamins C and A,
+            fiber, and antioxidants. Accompanying this is a <b>poached egg</b>,
+            offering high-quality protein and omega-3 fatty acids, served alongside
+            <b>whole wheat bread</b> for your daily dose of fiber and complex carbohydrates.
+            A glass of <b>fresh milk</b> provides calcium for bone health and completes this
+            balanced morning meal.</p>
+    </div>
+</div>
+<div class="meal-section">
+    <div class="meal-image">
+        <img src="Images/hams.png" alt="Healthy Breakfast" />
+    </div>
+    <div class="meal-description">
+        <h2>AM Snack</h2>
+        <p>Indulge in a delightful mid-morning treat with our <b>"Turon"</b>,
+            a healthier version of the traditional Filipino snack.
+            Made with <b><i>banana</i></b> and a hint of <b><i>jackfruit</i></b> wrapped in a thin
+            pastry and lightly pan-fried in minimal oil, it offers a satisfying
+            crunch with a sweet and savory filling, providing an energy
+            boost with controlled sugar levels. </p>
+    </div>
+</div>
+<div class="meal-section">
+    <div class="meal-image">
+        <img src="Images/hlunch.png" alt="Healthy Breakfast" />
+    </div>
+    <div class="meal-description">
+        <h2>Lunch</h2>
+        <p>Savor the flavors of <b>stir-fried pork</b> combined with<b>chicharo</b> <i>(peas)</i>
+            and <b>green beans</b>, cooked in a light, <b>savory sauce</b>.
+            This dish is packed with lean protein, vitamins, and antioxidants, promoting muscle
+            health and digestion. Paired with <b>boiled rice</b> for a comforting, fulfilling base,
+            and complemented by chilled ripe <b>langka</b> <i>(jackfruit)</i>, adding a sweet,
+            fiber-rich end to your meal.</p>
+    </div>
+</div>
+<div class="meal-section">
+    <div class="meal-image">
+        <img src="Images/hpms.png" alt="Healthy Breakfast" />
+    </div>
+    <div class="meal-description">
+        <h2>PM Snack</h2>
+        <p> For an afternoon pick-me-up, enjoy <b>"Pansit Bihon Gisado"</b>,
+            a classic Filipino noodle dish made from <b><i>rice vermicelli</i></b>, sautéed
+            with a variety of <b><i>vegetables</i></b> and <b><i>lean meat</i></b> or <b><i>seafood</i></b>, seasoned with
+            a light <b><i>soy sauce</i></b> and <b><i>citrus</i></b>,. This dish is a great source of carbohydrates,
+            protein, and vitamins, making it an energizing, nutritious snack.</p>
+    </div>
+</div>
+<div class="meal-section">
+    <div class="meal-image">
+        <img src="Images/hdinner.png" alt="Healthy Breakfast" />
+    </div>
+    <div class="meal-description">
+        <h2>Dinner</h2>
+        <p> Wind down with a comforting bowl of <b>"Ginulay na Mais at Malunggay"</b>,
+            a <i>corn and moringa leaf soup</i>. This dish provides a high fiber content,
+            essential vitamins, and minerals, supporting immune health and digestion.
+            Accompanied by <b>Chicken Lumpia</b>, a lean meat spring roll that's baked instead of fried,
+            and a side of boiled rice, it's a satisfying end to the day. A fresh slice of <b>watermelon</b>,
+            packed with hydration and antioxidants, offers a refreshing, sweet conclusion to your meals.</p>
+    </div>
+</div>
+
+
+</body>
+</html>
