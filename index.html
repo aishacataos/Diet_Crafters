@@ -179,7 +179,7 @@ function calculateBMI() {
                      bmi >= 18.5 && bmi <= 24.9 ? "Normal weight" :
                      bmi >= 25 && bmi <= 29.9 ? "Overweight" :
                      bmi >= 30 ? "Obesity" : "Invalid BMI";
-    document.getElementById('result').innerHTML = `Your BMI is <strong>${bmi.toFixed(2)}</strong>, categorized as <strong>${resultText}</strong>.<br>For more personalized health advice, click Meal Plans.`;
+    document.getElementById('result').innerHTML = `Your BMI is <strong>${bmi.toFixed(2)}</strong>, categorized as <strong>${resultText}</strong>.<br>For more personalized health advice, click <a href="MealPlans.html">Meal Plans</a>.`;
 }
 </script>
 
