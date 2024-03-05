@@ -173,11 +173,11 @@ function calculateBMI() {
     var height = document.getElementById('height').value / 100; // Height in meters
     var weight = document.getElementById('weight').value;
     var bmi = weight / (height * height);
-    var resultText = bmi < 18.5 ? "Underweight" :
-                     bmi >= 18.5 && bmi <= 24.9 ? "Normal weight" :
-                     bmi >= 25 && bmi <= 29.9 ? "Overweight" :
-                     bmi >= 30 ? "Obesity" : "Invalid BMI";
-    document.getElementById('result').innerHTML = `Your BMI is <strong>${bmi.toFixed(2)}</strong>, categorized as <strong>${resultText}</strong>.<br>For more personalized health advice, click <a href="MealPlans.html">Meal Plans</a>.`;
+    var resultText = bmi < 18.5 ? `<a href="Underweight.html">Underweight</a>` :
+                     bmi >= 18.5 && bmi <= 24.9 ? `<a href="Healthy.html">Healthy</a>` :
+                     bmi >= 25 && bmi <= 29.9 ? `<a href="Overweight.html">Overweight</a>` :
+                     bmi >= 30 ? `<a href="Obese.html">Obesity</a>` : "Invalid BMI";
+    document.getElementById('result').innerHTML = `Your BMI is <strong>${bmi.toFixed(2)}</strong>, categorized as ${resultText}.<br>For more personalized health advice, click <a href="MealPlans.html">Meal Plans</a>.`;
 }
 </script>
 
