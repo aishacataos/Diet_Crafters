@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Healthy 3 Day Meal Plan</title>
+    <style>
+        :root {
+            --primary-color: #76b852;
+            --hover-primary: #8DC26F;
+            --text-color: #505050;
+            --light-text-color: #ffffff;
+            --background-color: #f0f0f0;
+            --container-bg-color: #ffffff;
+            --container-shadow: 0 2px 4px rgba(0,0,0,0.1);
+            --font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            --border-radius: 10px;
+            --transition-speed: 0.3s;
+        }
+
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: var(--font-family);
+            background: var(--background-color);
+            color: var(--text-color);
+        }
+
+        .header {
+            background: linear-gradient(90deg, var(--primary-color) 0%, var(--hover-primary) 100%);
+            color: var(--light-text-color);
+            padding: 20px 50px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            box-shadow: var(--container-shadow);
+        }
+
+        .menu {
+            list-style: none;
+            padding: 0;
+            display: flex;
+            gap: 20px;
+        }
+
+        .menu li a {
+            color: var(--light-text-color);
+            text-decoration: none;
+            padding: 5px 10px;
+            border-radius: var(--border-radius);
+            transition: background-color var(--transition-speed);
+        }
+
+        .menu li a:hover {
+            background-color: var(--hover-primary);
+        }
+
+        .login-section img {
+            margin-left: 20px;
+            cursor: pointer;
+            transition: transform var(--transition-speed);
+        }
+
+        .login-section img:hover {
+            transform: scale(1.1);
+        }
+
+        .meal-plan-container {
+            display: flex;
+            justify-content: space-between;
+            flex-wrap: wrap;
+            margin: 40px auto;
+            padding: 20px;
+            width: 90%;
+            max-width: 1200px;
+            border-radius: var(--border-radius);
+            box-shadow: var(--container-shadow);
+        }
+
+        .meal-plan {
+            background-color: var(--container-bg-color);
+            width: 31%; /* Adjusted for three side by side */
+            margin-bottom: 20px;
+            border-radius: var(--border-radius);
+            box-shadow: var(--container-shadow);
+            box-sizing: border-box;
+            padding: 20px;
+            margin-right: 1.5%; /* Small gap between containers */
+        }
+
+        .meal-plan:last-child {
+            margin-right: 0; /* Remove margin for the last child to align properly */
+        }
+
+        .meal-plan h2 {
+            color: var(--primary-color);
+        }
+
+        .meal {
+            padding: 10px;
+            border-left: 4px solid var(--primary-color);
+            margin: 10px 0;
+        }
+
+        .meal h3 {
+            margin: 0 0 10px 0;
+        }
+
+        @media (max-width: 768px) {
+            .header {
+                flex-direction: column;
+                text-align: center;
+            }
+
+            .menu {
+                justify-content: center;
+                margin-top: 20px;
+            }
+
+            .meal-plan {
+                width: 100%; /* Full width on smaller screens */
+                margin-right: 0;
+            }
+
+            .meal-plan:not(:last-child) {
+                margin-bottom: 20px;
+            }
+        }
+
+        .meal-plan a {
+            color: var(--primary-color);
+            text-decoration: none;
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+
+<div class="header">
+    <h1>Our Mission</h1>
+    <ul class="menu">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="MealPlans.html">Meal Plans</a></li>
+    </ul>
+    <div class="login-section">
+        <img src="admin-login-icon.jpg" alt="Admin Login" onclick="location.href='/admin-login.html'">
+        <img src="login-signup-icon.jpg" alt="Login/Sign Up" onclick="location.href='/login-signup.html'">
+    </div>
+</div>
+<div class="body">
+    <img src="Banner" alt="Website Banner">
+    <h1>Welcome to Diet Crafters!</h1>
+    <ul>
+        <li><h2>Our Mission</h2></li>
+        <ul>
+            <li>Our Mission</li>
+        </ul>
+        <li><h2>Understand the Importance</h2></li>
+        <ul>
+
+        </ul>
+    </ul>
+</div>
+</head>
+</html>
