@@ -3,8 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Underweight Meal Plan - DietCrafters</title>
-    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600&display=swap" rel="stylesheet">
+    <title>Underweight 3 Day Meal Plan</title>
     <style>
         :root {
             --primary-color: #76b852;
@@ -12,7 +11,7 @@
             --text-color: #505050;
             --light-text-color: #ffffff;
             --background-color: #f0f0f0;
-            --container-bg-color: rgba(255, 255, 255, 0);
+            --container-bg-color: #ffffff;
             --container-shadow: 0 2px 4px rgba(0,0,0,0.1);
             --font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
             --border-radius: 10px;
@@ -23,12 +22,12 @@
             margin: 0;
             padding: 0;
             font-family: var(--font-family);
-            background-color: var(--background-color);
+            background: var(--background-color);
             color: var(--text-color);
         }
 
         .header {
-            background-color: var(--primary-color);
+            background: linear-gradient(90deg, var(--primary-color) 0%, var(--hover-primary) 100%);
             color: var(--light-text-color);
             padding: 20px 50px;
             display: flex;
@@ -37,162 +36,197 @@
             box-shadow: var(--container-shadow);
         }
 
-        .branding {
-            font-size: 2.5rem;
-            font-weight: bold;
-            margin-right: auto;
-        }
-
         .menu {
             list-style: none;
-            display: flex;
-            gap: 15px;
             padding: 0;
-            margin-left: auto;
+            display: flex;
+            gap: 20px;
         }
 
         .menu li a {
             color: var(--light-text-color);
             text-decoration: none;
-            padding: 10px 15px;
-            transition: background-color var(--transition-speed);
+            padding: 5px 10px;
             border-radius: var(--border-radius);
-            background-color: rgba(255, 255, 255, 0.3);
+            transition: background-color var(--transition-speed);
         }
 
         .menu li a:hover {
-            background-color: rgba(255, 255, 255, 0.5);
+            background-color: var(--hover-primary);
         }
 
-        .meal-section {
-            display: flex;
-            margin-top: 20px;
-            align-items: center;
-            justify-content: center;
-            padding: 0 50px;
-        }
-
-        .meal-description {
-            flex-basis: 50%;
-            background-color: var(--container-bg-color);
-            padding: 20px;
+        .login-section img {
             margin-left: 20px;
+            cursor: pointer;
+            transition: transform var(--transition-speed);
+        }
+
+        .login-section img:hover {
+            transform: scale(1.1);
+        }
+
+        .meal-plan-container {
+            display: flex;
+            justify-content: space-between;
+            flex-wrap: wrap;
+            margin: 40px auto;
+            padding: 20px;
+            width: 90%;
+            max-width: 1200px;
             border-radius: var(--border-radius);
             box-shadow: var(--container-shadow);
-            font-size: 1rem;
         }
 
-        .meal-image {
-            flex-basis: 50%;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-        }
-
-        .meal-image img {
-            max-width: 100%;
-            height: auto;
+        .meal-plan {
+            background-color: var(--container-bg-color);
+            width: 31%; /* Adjusted for three side by side */
+            margin-bottom: 20px;
             border-radius: var(--border-radius);
+            box-shadow: var(--container-shadow);
+            box-sizing: border-box;
+            padding: 20px;
+            margin-right: 1.5%; /* Small gap between containers */
+        }
+
+        .meal-plan:last-child {
+            margin-right: 0; /* Remove margin for the last child to align properly */
+        }
+
+        .meal-plan h2 {
+            color: var(--primary-color);
+        }
+
+        .meal {
+            padding: 10px;
+            border-left: 4px solid var(--primary-color);
+            margin: 10px 0;
+        }
+
+        .meal h3 {
+            margin: 0 0 10px 0;
         }
 
         @media (max-width: 768px) {
-            .meal-section {
-                flex-direction: column-reverse;
-            }
-
-            .meal-description, .meal-image {
-                flex-basis: auto;
-                max-width: 90%;
-                margin: 10px auto;
-            }
-
             .header {
                 flex-direction: column;
                 text-align: center;
             }
 
-            .branding, .menu {
-                margin-left: 0;
+            .menu {
+                justify-content: center;
+                margin-top: 20px;
+            }
+
+            .meal-plan {
+                width: 100%; /* Full width on smaller screens */
                 margin-right: 0;
             }
+
+            .meal-plan:not(:last-child) {
+                margin-bottom: 20px;
+            }
+        }
+
+        .meal-plan a {
+            color: var(--primary-color);
+            text-decoration: none;
+            font-weight: bold;
         }
     </style>
 </head>
 <body>
 
 <div class="header">
-    <div class="branding">Underweight Meal Plan</div>
-    <nav>
-        <ul class="menu">
-            <li><a href="index.html">Home</a></li>
-            <li><a href="MealPlans.html">Meal Plans</a></li>
-            <li><a href="#progress">Progress</a></li>
-            <li><a href="#learn">Learn More</a></li>
-        </ul>
-    </nav>
-</div>
-
-<div class="meal-section">
-    <div class="meal-image">
-        <img src="Images/ubf.png" alt="Healthy Breakfast" />
-    </div>
-    <div class="meal-description">
-        <h2>Breakfast</h2>
-        <p>Start your day with a nutritious breakfast that's high in calories and protein to help you gain weight healthily.
-            This meal includes, <b>(skinless lychees, longganisa, scrambled egg with tomato, onion, and spinach + boiled rice
-                and fresh milk).</b> It's packed with the right nutrients to fuel your body It's packed with the right nutrients
-            to help fuel your body the right way for your day.</p>
-    </div>
-</div>
-<div class="meal-section">
-    <div class="meal-image">
-        <img src="Images/uas.png" alt="Healthy Breakfast" />
-    </div>
-    <div class="meal-description">
-        <h2>AM Snack</h2>
-        <p>Recharge with a mid-morning snack designed to boost your energy levels. This snack is <b>"Buchi"</b>,
-            a popular snack in Filipino cuisine, known for its sweet and savory flavors.
-            It's a type of rice cake, made from glutinous rice flour, and traditionally filled with sweetened red bean paste,
-            though variations might include fillings like ube, custard,
-            or even chocolate for a variety of healthy fat and nutrients. </p>
-    </div>
-</div>
-<div class="meal-section">
-    <div class="meal-image">
-        <img src="Images/ulunch.png" alt="Healthy Breakfast" />
-    </div>
-    <div class="meal-description">
-        <h2>Lunch</h2>
-        <p>Enjoy a hearty lunch that combines complex carbohydrates,
-            lean proteins, and healthy fats to support your weight gain goals.
-            Today's meal features <b>chicken pochero with veggies, boiled rice, and kamachile</b>.</p>
-    </div>
-</div>
-<div class="meal-section">
-    <div class="meal-image">
-        <img src="Images/upms.png" alt="Healthy Breakfast" />
-    </div>
-<div class="meal-description">
-    <h2>PM Snack</h2>
-    <p> Don't be afraid to spoil yourself with some <b>Pancit Canton</b>.
-        A classic favorite that comes in an assortment of flavor and best taken in moderation
-        <i>(not daily)</i>. You can also mix this up with more nutritious food like
-        <b>boiled egg/s and vegetables (scallions, carrots, or lettuce)</b>!</p>
-</div>
-</div>
-<div class="meal-section">
-    <div class="meal-image">
-        <img src="Images/udinner.png" alt="Healthy Breakfast" />
-    </div>
-    <div class="meal-description">
-        <h2>Dinner</h2>
-        <p>End your day with a dinner that not only satisfies your appetite but also contributes
-            to your nutritional needs. Your dinner includes a generous serving of
-            <b>sinigang na talakitok with veggies, pork strip fritters, and mango-sago with gelatin </b>
-            ensuring a well-rounded intake of vitamins and minerals</p>
+    <h1>Underweight Meal Plans</h1>
+    <ul class="menu">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="MealPlans.html">Meal Plans</a></li>
+    </ul>
+    <div class="login-section">
+        <img src="admin-login-icon.jpg" alt="Admin Login" onclick="location.href='/admin-login.html'">
+        <img src="login-signup-icon.jpg" alt="Login/Sign Up" onclick="location.href='/login-signup.html'">
     </div>
 </div>
 
+<div class="meal-plan-container">
+    <!-- Day 1 -->
+    <div class="meal-plan" id="day1">
+        <h2>Day 1</h2>
+        <div class="meal">
+            <h3><a href="URL">Breakfast</a></h3>
+            <p>Scrambled Eggs with Bacon Bits, Pandesal, and Hot Chocolate.</p>
+        </div>
+        <div class="meal">
+            <h3><a href="URL">AM Snack</a></h3>
+            <p>"Buchi".</p>
+        </div>
+        <div class="meal">
+            <h3><a href="URL">Lunch</a></h3>
+            <p>Chicken pochero with veggies and White rice.</p>
+        </div>
+        <div class="meal">
+            <h3><a href="URL">PM Snack</a></h3>
+            <p>Chocolate crinkles.</p>
+        </div>
+        <div class="meal">
+            <h3><a href="URL">Dinner</a></h3>
+            <p>Pork barbecue and Kalabasa-patani gisado paired with Brown rice, and Pulvoron for dessert.</p>
+        </div>
+    </div>
+
+    <!-- Day 2 -->
+    <div class="meal-plan" id="day2">
+        <h2>Day 2</h2>
+        <div class="meal">
+            <h3><a href="URL">Breakfast</a></h3>
+            <p>Toasted bread with fruit jam and Fresh Milk. </p>
+        </div>
+        <div class="meal">
+            <h3><a href="URL">AM Snack</a></h3>
+            <p>Yogurt and blueberries.</p>
+        </div>
+        <div class="meal">
+            <h3><a href="URL">Lunch</a></h3>
+            <p>Turkey and cheese sandwich with carrot sticks.</p>
+        </div>
+        <div class="meal">
+            <h3><a href="URL">PM Snack</a></h3>
+            <p>Apple slices.</p>
+        </div>
+        <div class="meal">
+            <h3><a href="URL">Dinner</a></h3>
+            <p>Grilled chicken and steam broccoli with Ripe mango.</p>
+        </div>
+    </div>
+
+    <!-- Day 3 -->
+    <div class="meal-plan" id="day3">
+        <h2>Day 3</h2>
+        <div class="meal">
+            <h3><a href="URL">Breakfast</a></h3>
+            <p>Grapes, Toasted dried danggit with tomatoes,
+                Fried rice, and Fresh Milk .</p>
+        </div>
+        <div class="meal">
+            <h3><a href="URL">AM Snack</a></h3>
+            <p>Puto with cheese.</p>
+        </div>
+        <div class="meal">
+            <h3><a href="URL">Lunch</a></h3>
+            <p>Sinampalukang manok with White rice and
+                Ube ice cream for dessert.</p>
+        </div>
+        <div class="meal">
+            <h3><a href="URL">PM Snack</a></h3>
+            <p>Banana cue.</p>
+        </div>
+        <div class="meal">
+            <h3><a href="URL">Dinner</a></h3>
+            <p>Pinakbet with lechon kawali, White rice,
+                and Buko sherbet for dessert.</p>
+        </div>
+    </div>
+</div>
 
 </body>
 </html>
