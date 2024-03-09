@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Allergy-Friendly Meal Plans - DietCrafters</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            margin: 0;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            line-height: 1.6;
+            background-color: #f9fbe7;
+        }
+
+        .header {
+            background-color: #76b852;
+            color: white;
+            padding: 20px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .header h1 {
+            margin: 0;
+            float: left;
+        }
+
+        .header-links {
+            float: right;
+        }
+
+        .header-links a {
+            color: white;
+            text-decoration: none;
+            margin-left: 20px;
+        }
+
+        .meal-container {
+            display: flex;
+            justify-content: space-around;
+            align-items: flex-start;
+            padding: 20px;
+            max-width: 1200px;
+            margin: auto;
+        }
+
+        .meal-image {
+            flex: 1;
+            margin-right: 20px;
+            position: relative;
+        }
+
+        .meal-image-header {
+            position: absolute;
+            top: 0;
+            left: 50%;
+            transform: translateX(-50%);
+            background-color: rgba(0,0,0,0.5);
+            color: white;
+            padding: 10px 20px;
+            border-radius: 5px;
+            font-size: 24px;
+            font-weight: bold;
+        }
+
+        .meal-image img {
+            width: 100%;
+            max-width: 500px;
+            border-radius: 10px;
+        }
+
+        .meal-details, .meal-ingredients {
+            flex: 1;
+            padding: 0 20px;
+        }
+
+        .nutrition-facts, .meal-ingredients {
+            border: 1px solid #ccc;
+            padding: 10px;
+            margin-bottom: 20px;
+            font-size: 14px;
+        }
+
+        .nutrition-facts table, .meal-ingredients ul {
+            width: 100%;
+        }
+
+        .nutrition-facts th, .nutrition-facts td, .meal-ingredients li {
+            text-align: left;
+            padding: 5px;
+            border-bottom: 1px solid #ccc;
+        }
+
+        .nutrition-facts th {
+            font-weight: bold;
+        }
+
+        .nutrition-facts .calories td, .meal-ingredients li {
+            font-weight: bold;
+        }
+
+        .meal-procedure {
+            font-size: 16px;
+        }
+    </style>
+</head>
+<body>
+
+<div class="header">
+    <h1>Allergy-Friendly Meal Plans</h1>
+    <h2>Day 2</h2>
+    <div class="header-links">
+        <a href="../index.html">Home</a>
+        <a href="../MealPlans.html">Meal Plans</a>
+        <a href="Learn_More.html">Learn More</a>
+    </div>
+</div>
+
+<div class="meal-container">
+    <div class="meal-image">
+        <div class="meal-image-header">Dinner</div>
+        <img src="AFD2.png"/>
+    </div>
+    <div class="meal-details">
+      <h2>Baked Fish and Brown Rice with Stir Fried Vegetables  </h2>
+        <div class="meal-ingredients">
+            <h2>Ingredients</h2>
+            <ul>
+                 <td>For the Baked Fish </td>
+                <li>4 oz (approximately 115 grams) skinless,boneless fish fillet (cod, salmon, tilapia, etc.)  </li>
+                <li>1 tablespoon olive oil </li>
+                <li>1/2 teaspoon dried herbs of your choice (e.g., oregano, thyme, basil)  </li>
+                <li>Salt and freshly ground black pepper to taste </li>
+                <td>For the Brown Rice </td>
+                <li>½ cup uncooked brown rice  </li>
+                <li>¾ cup water or low-sodium chicken broth</li>
+                <td>For the Stir-Fried Vegetables </td>
+                <li>1 tablespoon olive oil  </li>
+                <li>½ cup chopped vegetables (mix and match your favorites, e.g., broccoli florets, bell pepper strips, carrots, zucchini) </li>
+                <li>1 clove garlic, minced  </li>
+                <li>1 tablespoon low-sodium soy sauce </li>
+                <li>Pinch of red pepper flakes (optional)  </li>
+            </ul>
+        </div>
+        <div class="nutrition-facts">
+            <table>
+                <tr>
+                    <th colspan="1">Nutrition Facts</th>
+                    <th colspan="1">Amount</th>
+                </tr>
+                <tr class="calories">
+                    <td>Calories</td>
+                    <td>450kcal</td>
+                </tr>
+                <tr>
+                    <td>Protein</td>
+                    <td>40g</td>
+                </tr>
+                <tr>
+                    <td>Fat</td>
+                    <td>10g</td>
+                </tr>
+             </table>
+        </div>
+        <div class="meal-procedure">
+            <h2>Meal Procedure</h2>
+            <ol>
+                <li>Preheat the oven to 400°F (200°C). </li>
+                <li>Prepare the Fish: Pat the fish fillet dry with paper towels. In a small bowl, combine olive oil, dried herbs, salt, and pepper. Brush the fish fillet with the herb mixture on both sides. Cook the Brown Rice.</li>
+                <li>Rinse the brown rice in a fine-mesh strainer.</li>
+                <li> In a small saucepan, combine rinsed rice and water or broth.</li>
+                <li> Bring to a boil over high heat.</li>
+                <li>Reduce heat, cover the pot, and simmer for 45-50 minutes, or until the rice is cooked through and fluffy. Remove from heat and let it sit for 5 minutes before fluffing with a fork. </li>
+                <li>Stir-fry the vegetables.</li>
+                <li>Bake the fish.</li>
+                <li>Plate the cooked brown rice.</li>
+                <li>Top it with the baked fish fillet. On the side, serve the sir-fried vegetables.</li>
+            </ol>
+       </div>
+    </div>
+</div>
+</body>
+</html>

@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Allergy-Friendly Meal Plans - DietCrafters</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            margin: 0;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            line-height: 1.6;
+            background-color: #f9fbe7;
+        }
+
+        .header {
+            background-color: #76b852;
+            color: white;
+            padding: 20px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .header h1 {
+            margin: 0;
+            float: left;
+        }
+
+        .header-links {
+            float: right;
+        }
+
+        .header-links a {
+            color: white;
+            text-decoration: none;
+            margin-left: 20px;
+        }
+
+        .meal-container {
+            display: flex;
+            justify-content: space-around;
+            align-items: flex-start;
+            padding: 20px;
+            max-width: 1200px;
+            margin: auto;
+        }
+
+        .meal-image {
+            flex: 1;
+            margin-right: 20px;
+            position: relative;
+        }
+
+        .meal-image-header {
+            position: absolute;
+            top: 0;
+            left: 50%;
+            transform: translateX(-50%);
+            background-color: rgba(0,0,0,0.5);
+            color: white;
+            padding: 10px 20px;
+            border-radius: 5px;
+            font-size: 24px;
+            font-weight: bold;
+        }
+
+        .meal-image img {
+            width: 100%;
+            max-width: 500px;
+            border-radius: 10px;
+        }
+
+        .meal-details, .meal-ingredients {
+            flex: 1;
+            padding: 0 20px;
+        }
+
+        .nutrition-facts, .meal-ingredients {
+            border: 1px solid #ccc;
+            padding: 10px;
+            margin-bottom: 20px;
+            font-size: 14px;
+        }
+
+        .nutrition-facts table, .meal-ingredients ul {
+            width: 100%;
+        }
+
+        .nutrition-facts th, .nutrition-facts td, .meal-ingredients li {
+            text-align: left;
+            padding: 5px;
+            border-bottom: 1px solid #ccc;
+        }
+
+        .nutrition-facts th {
+            font-weight: bold;
+        }
+
+        .nutrition-facts .calories td, .meal-ingredients li {
+            font-weight: bold;
+        }
+
+        .meal-procedure {
+            font-size: 16px;
+        }
+    </style>
+</head>
+<body>
+
+<div class="header">
+    <h1>Allergy-Friendly Meal Plans</h1>
+    <h2>Day 1</h2>
+    <div class="header-links">
+        <a href="../index.html">Home</a>
+        <a href="../MealPlans.html">Meal Plans</a>
+        <a href="Learn_More.html">Learn More</a>
+    </div>
+</div>
+
+<div class="meal-container">
+    <div class="meal-image">
+        <div class="meal-image-header">Lunch</div>
+        <img src="AFL1.png"/>
+    </div>
+    <div class="meal-details">
+        <h2>Fish Tinola with Ginger </h2>
+        <div class="meal-ingredients">
+            <h2>Ingredients</h2>
+            <ul>
+                <li>150 grams fish fillet (boneless and skinless) </li>
+                <li>2 cups water </li>
+                <li>1 stalk lemongrass, white part only, bruised </li>
+                <li>1 thumb-sized ginger knob, sliced  </li>
+                <li>1 small onion, sliced </li>
+                <li>1 clove garlic, minced  </li>
+                <li>1 small tomato, sliced  </li>
+                <li>1/2 green chili pepper, sliced (adjust according to spice preference)  </li>
+                <li>1/4 teaspoon dried fish sauce (patis)  </li>
+                <li>Salt and black pepper to taste  </li>
+                <li>1 tablespoon chopped malunggay leaves (optional)   </li>
+            </ul>
+        </div>
+        <div class="nutrition-facts">
+            <table>
+                <tr>
+                    <th colspan="1">Nutrition Facts</th>
+                    <th colspan="1">Amount</th>
+                </tr>
+                <tr class="calories">
+                    <td>Calories</td>
+                    <td>250-300kcal</td>
+                </tr>
+                <tr>
+                    <td>Protein</td>
+                    <td>30-35</td>
+                </tr>
+                <tr>
+                    <td>Fat</td>
+                    <td>5-7g</td>
+                </tr>
+             </table>
+        </div>
+        <div class="meal-procedure">
+            <h2>Meal Procedure</h2>
+            <ol>
+                <li>In a pot, bring the water to a boil.</li>
+                <li>Add the lemongrass, ginger, onion, and garlic. Simmer for 3-5 minutes, allowing the flavors to infuse the broth.</li>
+                <li>Add the fish fillet and gently simmer for 5-7 minutes, or until the fish is cooked through and flakes easily with a fork.
+                </li>Add the tomato, chili pepper, and dried fish sauce. Season with salt and pepper to taste. </li>
+                <li>Simmer for an additional 2-3 minutes.</li>
+                <li> Remove the lemongrass stalk before serving.</li>
+                <li>(Optional) Garnish with chopped malunggay leaves for additional vitamins and minerals.</li>
+            </ol>
+       </div>
+    </div>
+</div>
+</body>
+</html>

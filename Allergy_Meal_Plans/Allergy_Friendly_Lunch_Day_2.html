@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Allergy-Friendly Meal Plans - DietCrafters</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            margin: 0;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            line-height: 1.6;
+            background-color: #f9fbe7;
+        }
+
+        .header {
+            background-color: #76b852;
+            color: white;
+            padding: 20px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .header h1 {
+            margin: 0;
+            float: left;
+        }
+
+        .header-links {
+            float: right;
+        }
+
+        .header-links a {
+            color: white;
+            text-decoration: none;
+            margin-left: 20px;
+        }
+
+        .meal-container {
+            display: flex;
+            justify-content: space-around;
+            align-items: flex-start;
+            padding: 20px;
+            max-width: 1200px;
+            margin: auto;
+        }
+
+        .meal-image {
+            flex: 1;
+            margin-right: 20px;
+            position: relative;
+        }
+
+        .meal-image-header {
+            position: absolute;
+            top: 0;
+            left: 50%;
+            transform: translateX(-50%);
+            background-color: rgba(0,0,0,0.5);
+            color: white;
+            padding: 10px 20px;
+            border-radius: 5px;
+            font-size: 24px;
+            font-weight: bold;
+        }
+
+        .meal-image img {
+            width: 100%;
+            max-width: 500px;
+            border-radius: 10px;
+        }
+
+        .meal-details, .meal-ingredients {
+            flex: 1;
+            padding: 0 20px;
+        }
+
+        .nutrition-facts, .meal-ingredients {
+            border: 1px solid #ccc;
+            padding: 10px;
+            margin-bottom: 20px;
+            font-size: 14px;
+        }
+
+        .nutrition-facts table, .meal-ingredients ul {
+            width: 100%;
+        }
+
+        .nutrition-facts th, .nutrition-facts td, .meal-ingredients li {
+            text-align: left;
+            padding: 5px;
+            border-bottom: 1px solid #ccc;
+        }
+
+        .nutrition-facts th {
+            font-weight: bold;
+        }
+
+        .nutrition-facts .calories td, .meal-ingredients li {
+            font-weight: bold;
+        }
+
+        .meal-procedure {
+            font-size: 16px;
+        }
+    </style>
+</head>
+<body>
+
+<div class="header">
+    <h1>Allergy-Friendly Meal Plans</h1>
+    <h2>Day 2</h2>
+    <div class="header-links">
+        <a href="../index.html">Home</a>
+        <a href="../MealPlans.html">Meal Plans</a>
+        <a href="Learn_More.html">Learn More</a>
+    </div>
+</div>
+
+<div class="meal-container">
+    <div class="meal-image">
+        <div class="meal-image-header">Lunch</div>
+        <img src="AFL2.png"/>
+    </div>
+    <div class="meal-details">
+      <h2>Grilled Cheese on Whole Grain Bread (Dairy-Free Cheese) </h2>
+        <div class="meal-ingredients">
+            <h2>Ingredients</h2>
+            <ul>
+                <li>2 slices whole wheat bread (approximately 50 grams/slice) </li>
+                <li>1 tablespoon dairy-free butter or margarine (spreadable) </li>
+                <li>2-3 slices dairy-free cheese of your choice (shredded or sliced) </li>
+                <li>Pinch of salt and black pepper (optional) </li>
+            </ul>
+        </div>
+        <div class="nutrition-facts">
+            <table>
+                <tr>
+                    <th colspan="1">Nutrition Facts</th>
+                    <th colspan="1">Mixed Pineapple and Grapes</th>
+                    <th colspan="1">Others</th>
+                </tr>
+                <tr class="calories">
+                    <td>Calories</td>
+                    <td>100-110kcal</td>
+                    <td>300-400kcal</td>
+                </tr>
+                <tr>
+                    <td>Protein</td>
+                    <td>1.7g</td>
+                    <td>15-20g</td>
+                </tr>
+                <tr>
+                    <td>Fat</td>
+                    <td>0.4g</td>
+                    <td>15-20g</td>
+                </tr>
+             </table>
+        </div>
+        <div class="meal-procedure">
+            <h2>Meal Procedure</h2>
+            <ol>
+                <li>Heat a non-stick pan or griddle over medium heat. </li>
+                <li>Spread the dairy-free butter evenly on one side of each bread slice. </li>
+                <li>(Optional) Sprinkle a pinch of salt and pepper on the non-buttered side of one bread slice. </li>
+                <li>Place the buttered slice, butter-side down, on the hot pan.  </li>
+                <li>Top with the dairy-free cheese slices. </li>
+                <li>Place the other bread slice, buttered side up, on top of the cheese. </li>
+                <li>Cook for 2-3 minutes per side, or until golden brown and the cheese melts. </li>
+                <li>Gently press down on the sandwich with a spatula while cooking to ensure even browning and melting.</li>
+            </ol>
+       </div>
+    </div>
+</div>
+</body>
+</html>

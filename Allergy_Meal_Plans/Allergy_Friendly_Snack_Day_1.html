@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Allergy-Friendly Meal Plans - DietCrafters</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            margin: 0;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            line-height: 1.6;
+            background-color: #f9fbe7;
+        }
+
+        .header {
+            background-color: #76b852;
+            color: white;
+            padding: 20px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .header h1 {
+            margin: 0;
+            float: left;
+        }
+
+        .header-links {
+            float: right;
+        }
+
+        .header-links a {
+            color: white;
+            text-decoration: none;
+            margin-left: 20px;
+        }
+
+        .meal-container {
+            display: flex;
+            justify-content: space-around;
+            align-items: flex-start;
+            padding: 20px;
+            max-width: 1200px;
+            margin: auto;
+        }
+
+        .meal-image {
+            flex: 1;
+            margin-right: 20px;
+            position: relative;
+        }
+
+        .meal-image-header {
+            position: absolute;
+            top: 0;
+            left: 50%;
+            transform: translateX(-50%);
+            background-color: rgba(0,0,0,0.5);
+            color: white;
+            padding: 10px 20px;
+            border-radius: 5px;
+            font-size: 24px;
+            font-weight: bold;
+        }
+
+        .meal-image img {
+            width: 100%;
+            max-width: 500px;
+            border-radius: 10px;
+        }
+
+        .meal-details, .meal-ingredients {
+            flex: 1;
+            padding: 0 20px;
+        }
+
+        .nutrition-facts, .meal-ingredients {
+            border: 1px solid #ccc;
+            padding: 10px;
+            margin-bottom: 20px;
+            font-size: 14px;
+        }
+
+        .nutrition-facts table, .meal-ingredients ul {
+            width: 100%;
+        }
+
+        .nutrition-facts th, .nutrition-facts td, .meal-ingredients li {
+            text-align: left;
+            padding: 5px;
+            border-bottom: 1px solid #ccc;
+        }
+
+        .nutrition-facts th {
+            font-weight: bold;
+        }
+
+        .nutrition-facts .calories td, .meal-ingredients li {
+            font-weight: bold;
+        }
+
+        .meal-procedure {
+            font-size: 16px;
+        }
+    </style>
+</head>
+<body>
+
+<div class="header">
+    <h1>Allergy-Friendly Meal Plans</h1>
+    <h2>Day 1</h2>
+    <div class="header-links">
+        <a href="../index.html">Home</a>
+        <a href="../MealPlans.html">Meal Plans</a>
+        <a href="Learn_More.html">Learn More</a>
+    </div>
+</div>
+
+<div class="meal-container">
+    <div class="meal-image">
+        <div class="meal-image-header">Snack</div>
+        <img src="AFS1.png"/>
+    </div>
+    <div class="meal-details">
+        <h2>Banana Cue</h2>
+        <div class="meal-ingredients">
+            <h2>Ingredients</h2>
+            <ul>
+                <li>Banana</li>
+                <li>Brown sugar</li>
+            </ul>
+        </div>
+        <div class="nutrition-facts">
+            <table>
+                <tr>
+                    <th colspan="1">Nutrition Facts</th>
+                    <th colspan="1">Amount</th>
+                </tr>
+                <tr class="calories">
+                    <td>Calories</td>
+                    <td>140-160kcal</td>
+                </tr>
+                <tr>
+                    <td>Fat</td>
+                    <td>2-4g</td>
+                </tr>
+                <tr>
+                    <td>Carbohydrates</td>
+                    <td>25-30g</td>
+                </tr>
+            </table>
+       </div>
+    </div>
+</div>
+
+</body>
+</html>
